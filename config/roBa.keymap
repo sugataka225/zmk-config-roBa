@@ -133,21 +133,21 @@
 
         num {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &kp F12                      &kp LS(MINUS)  &kp N7        &kp N8        &kp N9        &kp LS(SEMI)
-&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp PERIOD     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans      &trans  &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(SINGLE_QUOTE)
-&trans  &trans  &trans  &trans  &trans   &trans      &trans  &kp N0                                                   &kp KP_SLASH
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5                      &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0
+&kp LS(SEMI)  &kp MINUS     &kp LS(SINGLE_QUOTE)  &kp SLASH     &trans        &trans      &trans  &trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
+&trans        &trans        &trans                &trans        &trans        &trans      &trans  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
+&trans        &trans        &trans                &trans        &trans        &trans      &trans  &kp N0                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        ARROW {
+        ARROW.FN {
             bindings = <
-&kp ESCAPE      &trans        &trans  &trans  &trans                      &trans         &kp HOME        &kp UP_ARROW    &kp END          &kp DELETE
-&trans          &trans        &trans  &trans  &trans  &trans      &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &trans        &trans  &trans  &trans  &trans      &trans  &trans         &trans          &trans          &trans           &trans
-&trans          &kp LEFT_GUI  &trans  &trans  &trans  &trans      &trans  &trans                                                          &trans
+&kp ESCAPE      &kp F7        &kp F8  &kp F9  &kp F12                      &trans         &kp HOME        &kp UP_ARROW    &kp END          &kp DELETE
+&trans          &kp F4        &kp F5  &kp F6  &kp F11  &trans      &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp F1        &kp F2  &kp F3  &kp F10  &trans      &trans  &trans         &trans          &trans          &trans           &trans
+&trans          &kp LEFT_GUI  &trans  &trans  &trans   &trans      &trans  &trans                                                          &trans
             >;
         };
 
