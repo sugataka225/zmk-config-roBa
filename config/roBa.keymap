@@ -182,10 +182,10 @@
 
         mac {
             bindings = <
-&trans  &trans          &trans  &trans           &trans                              &trans         &kp HOME        &kp UP_ARROW    &kp END    &kp DELETE
-&trans  &kp LEFT_SHIFT  &trans  &kp RIGHT_ARROW  &trans          &trans      &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp ENTER
-&trans  &trans          &trans  &trans           &kp LEFT_ARROW  &trans      &trans  &trans         &trans          &trans          &trans     &trans
-&trans  &trans          &trans  &trans           &trans          &trans      &trans  &trans                                                    &trans
+&trans  &trans          &trans      &trans           &trans                              &trans         &kp HOME        &kp UP_ARROW    &kp END    &kp DELETE
+&trans  &kp LEFT_SHIFT  &kp DELETE  &kp RIGHT_ARROW  &trans          &trans      &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp ENTER
+&trans  &trans          &trans      &trans           &kp LEFT_ARROW  &trans      &trans  &trans         &trans          &trans          &trans     &trans
+&trans  &trans          &trans      &trans           &trans          &trans      &trans  &trans                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
