@@ -125,7 +125,7 @@
         symbol {
             bindings = <
 &kp QUESTION      &trans     &kp EXCLAMATION   &trans  &trans                      &kp INTERNATIONAL_3  &kp LS(INTERNATIONAL_1)  &kp LS(N8)         &kp LS(N9)      &kp LS(N5)
-&kp LEFT_BRACKET  &kp SLASH  &kp MINUS         &trans  &trans  &trans      &trans  &kp LS(NUMBER_3)     &trans                   &kp RIGHT_BRACKET  &kp NUHS        &trans
+&kp LEFT_BRACKET  &kp SLASH  &kp LS(NUMBER_2)  &trans  &trans  &trans      &trans  &kp LS(NUMBER_3)     &trans                   &kp RIGHT_BRACKET  &kp NUHS        &trans
 &trans            &trans     &kp SINGLE_QUOTE  &trans  &trans  &trans      &trans  &kp LS(N6)           &trans                   &kp LS(COMMA)      &kp LS(PERIOD)  &trans
 &trans            &trans     &trans            &trans  &trans  &trans      &trans  &trans                                                                           &trans
             >;
