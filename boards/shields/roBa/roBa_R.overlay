@@ -1,5 +1,9 @@
 #include "roBa.dtsi"
 
+&roba_typing_guard {
+    status = "okay";
+};
+
 &default_transform {
     col-offset = <6>;
 };

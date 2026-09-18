@@ -116,6 +116,14 @@
         compatible = "zmk,input-listener";
         status = "disabled";
     };
+
+    roba_typing_guard: roba_typing_guard {
+        compatible = "roba,input-processor-typing-guard";
+        #input-processor-cells = <0>;
+        typing-window-ms = <200>;
+        motion-threshold = <2>;
+        status = "disabled";
+    };
 };
 
 &spi0 {

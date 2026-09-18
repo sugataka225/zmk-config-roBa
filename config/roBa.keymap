@@ -32,13 +32,17 @@
 &zip_temp_layer {
     require-prior-idle-ms = <AML_PRIOR_IDLE_MS>;
     excluded-positions = <
-        6 7 8
-        18 20
-        22
+        18 19 20 // left, middle, right mouse buttons
+        30 32    // back and forward mouse buttons
+        22 33    // Shift hold-taps; their tap macros still exit AML
     >;
 };
 
-&trackball_listener { input-processors = <&zip_temp_layer AML_MOUSE_LAYER AML_TIMEOUT_MS>; };
+&trackball_listener {
+    input-processors = <&roba_typing_guard
+                        &zip_xy_scaler 2 1
+                        &zip_temp_layer AML_MOUSE_LAYER AML_TIMEOUT_MS>;
+};
 
 &mkp_input_listener { input-processors = <&zip_temp_layer AML_MOUSE_LAYER AML_TIMEOUT_MS>; };
 

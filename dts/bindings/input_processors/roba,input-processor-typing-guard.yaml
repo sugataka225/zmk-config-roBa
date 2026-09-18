@@ -1,0 +1,10 @@
+description: Suppress small pointer movements briefly after typing
+compatible: "roba,input-processor-typing-guard"
+include: ip_zero_param.yaml
+properties:
+  typing-window-ms:
+    type: int
+    default: 200
+  motion-threshold:
+    type: int
+    default: 2
