@@ -40,7 +40,7 @@
 
 &trackball_listener {
     input-processors = <&roba_typing_guard
-                        &zip_xy_scaler 2 1
+                        &zip_xy_scaler 5 2
                         &zip_temp_layer AML_MOUSE_LAYER AML_TIMEOUT_MS>;
 };
 
@@ -84,6 +84,16 @@
     };
 
     behaviors {
+        scroll_mclick: scroll_mclick {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            display-name = "Scroll / Middle Click";
+            bindings = <&mo>, <&mkp>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+        };
+
         tog_off: toggle_layer_off {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -160,7 +170,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &scroll_mclick 5 MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB5  &trans    &mkp MB4  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
